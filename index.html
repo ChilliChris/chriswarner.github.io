@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="CSS/MainStyle.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="CSS/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </head>
 
@@ -21,7 +22,7 @@
                     <source src="Showcase/Videos/PlayerSyncing.mp4" type="video/mp4">
                     <source src="Showcase/Videos/PlayerSyncing.webm" type="video/webm">
                     <source src="Showcase/Videos/PlayerSyncing.ogy" type="video/ogy">
-                    <!--Note that it doesn't play multiple, it just lists the supported videos-->>
+                    <!--Note that it doesn't play multiple, it just lists the supported videos-->
                 </video>
             </div>
 
@@ -42,7 +43,7 @@
                             <div class="card-holder">Test1</div>
                             <div class="card-holder">Test2</div>
                             <div class="card-holder">Test3</div>
-                            <div class="card-holder">Test3</div>
+                            <div class="card-holder">Test4</div>
                         </div>
                     </div>
                 </div>
@@ -51,13 +52,22 @@
 
     </div>
     <!-- Menu Bar-->
-    <div id="menubar-container" class style="opacity: 0.75; display: block;">
-        <div id="menubar-title" class="noselect">
-            <span>Chris Warner</span>
+    <div id="menubar-container">
+        <!-- Menu Bar Background-->
+        <div id="menu-background"></div>
+        <!-- Menu Bar Background End-->
+        <!-- Menu Bar Container-->
+        <div class="container-fluid">
+            <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                <div id="menubar-title" class="noselect">
+                    <span>Chris Warner</span>
+                    </div>
+            </div>
+            <div class="col-sm-6 col-md-9 col-lg-9 col-xl-10">
+
+            </div>
         </div>
-        <div id="menubar-divider" class="noselect">
-            <span>|</span>
-        </div>
+        <!-- Menu Bar Container End-->
     </div>
 </main>
     

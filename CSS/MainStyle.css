@@ -32,14 +32,44 @@ body::before{
     width: 100%;
 }
 
+#menu-background{
+    background-color: #000000;
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
 #menubar-container{
-    background-color: black;
+    opacity: 1;
+    display: block;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     height: 50px;
-    opacity: 0.5;
+    z-index: 100;
+    min-width: 292px;
+}
+
+#menubar-title{
+    width: 30%;
+    height: 100%;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    float: right;
+    font-family: 'Abel',sans-serif;
+    min-width: 250px;
+}
+
+.menu-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .showcase-wrapper{
@@ -125,25 +155,6 @@ body::before{
     grid-gap: 15px;
 }
 
-#menubar-title{
-    width: 30%;
-    height: 100%;
-    font-size: 30px;
-    padding-left: 150px;
-    color: white;
-    float: left;
-    font-family: 'Abel',sans-serif;
-    min-width: 250px;
-}
-
-#menubar-divider{
-
-    width: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    height: 100%;
-    position: relative;
-}
 .group-projects{
     padding-top: 20px;
     padding-bottom: 10px;
