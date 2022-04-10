@@ -9,6 +9,14 @@
     <link href="CSS/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".card-video").mouseover(function(){
+            $(this).get(0).play();
+            alert("HJovered viceo");
+        })
+    </script>
+        
 </head>
 
 <body>
@@ -17,18 +25,95 @@
     <div id="page-container">
         <div id="page-background"></div>
         <div id="page">
-            <div class="showcase-wrapper" style="min-height: 545px;">
+            <div class="showcase-wrapper">
                 <video loop autoplay muted class="showcase-video">
                     <source src="Showcase/Videos/PlayerSyncing.mp4" type="video/mp4">
-                    <source src="Showcase/Videos/PlayerSyncing.webm" type="video/webm">
-                    <source src="Showcase/Videos/PlayerSyncing.ogy" type="video/ogy">
                     <!--Note that it doesn't play multiple, it just lists the supported videos-->
                 </video>
             </div>
 
             <div class="about-me-section">
-                <span class="title-large title"> About Me</span>
+                <div class="about-me-picture">
+                    <img src="Images/PersonalProfilePicture.jpg" alt="" class="profile-picture">
+                </div>
+                <div class="title">
+                    <span class="title-large">About Me</span>
+                    <br>
+                    <span class="text">
+                        <p>Hi, I'm Chris, a games programmer currently based in <strong>Lincoln, UK</strong>. I've been making games for 7 years and I now develop VR games professionally. I graduated from
+                            <a class="underline-link" href="https://www.lincoln.ac.uk/" target="_blank">
+                                University of Lincoln
+                            </a>, with a Upper-Second class Honours in
+                            <a class="underline-link" href="https://www.lincoln.ac.uk/course/cgpcmpub/" target="_blank">
+                               BSc in Games Computing
+                            </a> in 2021.
+                            <br>
+                            <br>
+                            My main interests are <strong>gameplay</strong>, <strong>Virtual Reality</strong>, and <strong>multiplayer</strong>. I love creating gameplay mechanics for games and custom systems. My main passion is VR development as it's such a niche area in the games industry at the moment.
+                            Being able to make unique gameplay in VR and making it an enjoyable player experience is what makes VR development so fun for me. I also enjoy making multiplayer games as well, as it puts a new challenge into making games.
+                            <br>
+                            Feel free to look through all of my projects below, I am also looking for freelance work, so if you're interested in my projects feel free to
+                            <a class="underline-link" href="" target="_blank">contact me</a>.
+                            <br>
+                        </p>
+
+                    </span>
+                </div>
             </div>
+
+            <div class="skills-section">
+                <div class="title">
+                    <span class="title-mid-large underline-title">Skills</span>
+                    <br>
+                    <img src="" alt="">
+                </div>
+                <div class="skills-container title">
+                    <div >
+                        <span class="underline">Langauges</span>
+                    </div>
+                    <div>
+                        <span class="underline">Engines / Framework Tools</span>
+                        </div>
+                        <div >
+                            <span class="underline">Fields</span>
+                        </div>
+                    <div class="skills-data">C# <br> C++ <br> JavaScript <br> HTML5 <br> CSS</div>
+                    <div class="skills-data">
+                        <a class="underline-link" href="" target="_blank">Unity</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">Unreal Engine 4</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">SDL2</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">PhysX</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">React</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">Blender</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">Adobe Photoshop</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">Github</a>
+                        <br>
+                        <a class="underline-link" href="" target="_blank">Trello</a>
+                    </div>
+                    <div class="skills-data">
+                        Gameplay
+                        <br>
+                        Virtual Reality
+                        <br>
+                        Multiplayer
+                        <br>
+                        Engine
+                        <br>
+                        Scripting
+                        <br>
+                        Physics
+                        <br>
+                    </div>
+                </div>
+            </div>
+
             <div class="group-projects middle-align">
                 <span class="title-medium title">Professional Projects</span>
                 <div style="text-align: center; color: white;">
@@ -40,10 +125,7 @@
                 <div class="project-container">
                     <div class="project-contents">
                         <div id="row">
-                            <div class="card-holder">Test1</div>
-                            <div class="card-holder">Test2</div>
-                            <div class="card-holder">Test3</div>
-                            <div class="card-holder">Test4</div>
+                            
                         </div>
                     </div>
                 </div>
@@ -64,13 +146,12 @@
                     </div>
             </div>
             <div class="col-sm-6 col-md-9 col-lg-9 col-xl-10">
-
+                
             </div>
         </div>
         <!-- Menu Bar Container End-->
     </div>
 </main>
-    
     <footer>
         <div>
 
