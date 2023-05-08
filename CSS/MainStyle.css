@@ -168,11 +168,14 @@ body::before{
 
 .project-card{
     position: relative;
+    width: 40em;
+    height: 50em;
+    margin: auto;
 }
 
 .project-preview-container{
-    width: 60%;
-    height: 60%;
+    width: 24em;
+    height: 24em;
     position: relative;
     margin: auto;
 }
@@ -185,7 +188,6 @@ body::before{
     width: 95%;
     height: 95%;
     position: absolute;
-    border-radius: 50%;
     border-width: 0px;
     background: linear-gradient(to bottom, #620b1b, #2e0000);
     border-style: solid;
@@ -201,12 +203,12 @@ body::before{
     height: 90%;
     position: absolute;
     background-color: black;
-    border-radius: 50%;
     border-width: 0px;
     overflow: hidden;
+    box-shadow: inset 0 0 30px #000000;
 }
 
-.project-preview-image::after{
+.project-preview-image-shadow{
     content: "";
     position: absolute;
     top: 50%;
@@ -214,7 +216,6 @@ body::before{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     box-shadow: inset 0 0 30px #000000;
     pointer-events: none;
 }
@@ -507,4 +508,20 @@ body::before{
   .fa-linkedin {
     background: #007bb5;
     color: white;
+  }
+
+  .contribution-header{
+    text-align: left;
+  }
+
+  .contribution-holder{
+    margin-left: 10%;
+  }
+  
+  .contribution-list-holder{
+    text-align: left;    
+  }
+
+  .contribution-text{
+    text-align: left;
   }
