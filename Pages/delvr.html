@@ -31,6 +31,9 @@
                         DelVR
                     </span>
                 </div>
+                <div class="middle-align">
+                    <img width="50%"src="../Images/Logo HiRes.png">
+                </div>
                 <div class="about-section">
                     <div class="title">
                         <span class="title-medium">About DelVR</span>
@@ -61,13 +64,35 @@
                         <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/World Switching.mp4"></video>
                     </div>
                 </div>
-
-                <div class="dropdown-section">
-                    <span class="title title-small" style="margin-left: 10px">NETWORK SYNCING</span>
-                </div>
-
                 <div class="dropdown-section">
                     <span class="title title-small" style="margin-left: 10px">BUILDING SYSTEM</span>
+                </div>
+
+                <div class="dropdown-section-inner" style="display: block;">
+                    <span class="title title-medium">Grid System</span>
+                    <span class="text"><br>The building system was made up of a custom grid. Which made it possible to build a different height layers and snapping points throughout the table/world. The grid system also had a shader that rendered a grid texture over the top of the world so that whenever a certain type of block was placed it would apply a grid to it to allow people to track movement distance. But when building props like walls, barrels and more were placed down the grid wouldn't be rendered over the top. The grid render also had custom properties to allow for size changes, colour and projection side.</span>
+                    <div class="image-preview">
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Grid Shader Rendering Demo.mp4"></video>
+                    </div>
+                    <span class="title title-medium">Tile Customisation</span>
+                    <span class="text"><br>More importantly, was the tiles that could be placed onto the grid. These all had their own custom properties that could be customised through the use of a menu. Both in Desktop and VR.</span>
+                    <div class="image-preview">
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Tile_Prop_Customisation.mp4"></video>
+                    </div>
+                    <span class="title title-medium">Building Environments</span>
+                    <div class="image-preview">
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Building_Timelaps.mp4"></video>
+                    </div>
+                    <span class="title title-medium">Save and Loading System</span>
+                    <span class="text"><br>Saving and loading tiles was possible due to a GUID system that was built into each tile. So when a table/environment was saved, the system would then save all of the nessasary GUIDs into a text file, ready to be loaded in the future. This also allowed for me to create a copy and paste system of groups of tiles so that they could be placed together.</span>
+                    <div class="image-preview">
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Build_System_Save_Load.mp4"></video>
+                    </div>
+                    <span class="title title-medium">Undo and Redo Building</span>
+                    <span class="text"><br>Undoing and Redoing was acheived by utilizing the Queue Class collection, by customising certain actions that could be undone and redone allowed for a simple system. Which would also work over network. In the example below you can see it working in the building system. But it was also tied into grabbing objects as well.</span>
+                    <div class="image-preview">
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Build_System_Undo_Redo.mp4"></video>
+                    </div>
                 </div>
             </div>
         </div>

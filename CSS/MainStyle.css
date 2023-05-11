@@ -78,7 +78,7 @@ body::before{
     width: 70%;
     height:100%;
     border-radius: 5%;
-    padding: 0 2% 0 2%;
+    padding: 0 2% 2% 2%;
 }
 
 #menu-background{
@@ -593,4 +593,7 @@ body::before{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+.page-link{
+    
 }
