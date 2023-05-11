@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Christopher Warner - Game Programming Protfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../CSS/MainStyle.css" rel="stylesheet">
+    <link href="../CSS/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
+    <meta name="keywords" content="programming, portfolio, game, development, vr, virtual reality, game development, christopher warner, c#, c++, unity, gamedev, delvr, virtual table top">
+    <meta name="description" content="Games programming and development portfolio of Christopher Warner.">
+</head>
+
+<body>
+    <main>
+    <!--Page Container-->
+    <div id="page-container">
+        <div id="page-background"></div>
+            <!-- Footer Container -->
+            <div class="footer-container middle-align title" style="background-image: linear-gradient(180deg, #620b1b, #1e0006)">
+                <div class="footer-holder">
+                    <div class="potion-icon">
+                        <div class="potion-background">
+                            <img src="../Images/AlchemicalIngredience.png" alt="" class="plant-img">
+                        </div>
+
+                    </div>
+                    <span class="title-medium underline-title">Contact Me</span>
+                    <span class="text">
+                        <p>
+                            <br>Feel free to contact me regarding any type of work or positions avaliable. 
+                            <br>You can reach me at these locations:
+                        </p>
+                    </span>
+                    <span>
+                        <a class="underline-link" href="mailto:contact@christopherwarner.co.uk" target="_blank">contact@christopherwarner.co.uk</a>
+                    </span>
+                    <div class="contact-me-socials-holder">
+                        <a href="https://twitter.com/Chris_Warner1" target="_blank" class="social-bubble">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/christophermawarner/" target="_blank" class="social-bubble">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:contact@christopherwarner.co.uk" target="_blank" class="social-bubble">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Container End -->
+        </div>
+
+    </div>
+    <!-- Menu Bar-->
+    <div id="menubar-container">
+        <!-- Menu Bar Background-->
+        <div id="menu-background"></div>
+        <!-- Menu Bar Background End-->
+        <!-- Menu Bar Container-->
+        <div class="container-fluid">
+            <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                <div id="menubar-title" class="noselect">
+                    <span>Chris Warner</span>
+                    </div>
+            </div>
+            <div class="col-sm-6 col-md-9 col-lg-9 col-xl-10">
+                
+            </div>
+        </div>
+        <!-- Menu Bar Container End-->
+    </div>
+</main>
+    <footer>
+    </footer>
+    <script>
+  
+        // Targeting video element 
+        const clips = document.querySelectorAll("#vid")
+        const containers = document.querySelectorAll("#container")
+  
+        /* Applying mouseover event on video clip 
+        and then we call play() function to play 
+        the video when the mouse is over the video */
+        clips.forEach(clip => {
+            clip.addEventListener("mouseover", function (e) {
+            clip.play();
+            })
+        });
+
+  
+        /* Applying mouseout event on video clip 
+        and then we call pause() function to stop 
+        the video when the mouse is out the video */
+
+        for(let i = 0; i < containers.length; i++){
+            containers[i].addEventListener("mouseleave", function (e) {
+                clips[i].currentTime = 0;
+                clips[i].pause();
+            })
+        }
+    </script>
+</body>
+</html>

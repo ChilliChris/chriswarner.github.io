@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Christopher Warner - Game Programming Protfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../CSS/MainStyle.css" rel="stylesheet">
+    <link href="../CSS/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>       
+    <meta name="keywords" content="programming, portfolio, game, development, vr, virtual reality, game development, christopher warner, c#, c++, unity, gamedev, delvr, virtual table top">
+    <meta name="description" content="Games programming and development portfolio of Christopher Warner.">
+</head>
+
+<body>
+    <main>
+    <!--Page Container-->
+    <div id="page-container">
+        <div id="video-background">
+            <video autoplay muted loop>
+                <source src="../Images/Website_Background_mp4_1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="page">
+            <div id="page-wrapper">
+                <div class="page-title title middle-align">
+                    <span class="project-info title-large underline-title">
+                        DelVR
+                    </span>
+                </div>
+                <div class="about-section">
+                    <div class="title">
+                        <span class="title-medium">About DelVR</span>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <span class="text">DelVR is a Virtual Tabletop platform that runs in Virtual Reality and Desktop. It was designed to allow player to play their own tabletop roleplaying games in a virtual environment. Allowing players to embody their characters and get fully immursed into a virtually build environment. DelVR allows users to create custom environments and play through them like you would in a Tabletop Roleplaying game such as things like D&D.
+                        <br>I was the only developer on this project, which meant I implemented all of the game's functionality. Which consisted of Networking, a completely custom VR Framework and World Building system. This project helped me learn a lot about Unity, Networking and C# in general. 
+                    </span>
+                </div>
+                
+                <div class="dropdown-section">
+                    <span class="title title-small" style="margin-left: 10px">INTERACTION FRAMEWORK & NETWORK SYNCING</span>
+                </div>
+                <div class="dropdown-section-inner" style="display: block;">
+                    <span class="text">I designed and devleoped all of the VR Interaction code from the ground up meaning that I could have more control and understanding of how the code behaves. The base design of the code structure is as follows:
+                    </span>
+                    <div class="image-preview">
+                        <img class="center" src="../Showcase/Images/DelVR/DelVR-Interaction-System-DiagramLong-1024x459.png" alt="" style="padding: 2%; background-color: white;">
+                    </div>
+                    <span class="text">The interaction system needed to be made so that it could function throughout the project without needing to create multiple different scripts to do the same thing with extra features. So I used a Polymophism approach to the interaction. So that the child classes such as dice or tiles could inherit all the nessasary properties and functions needed for interaction. This also worked for interactors as well, having this style of framework for interaction allowed me to easily create different forms of interaction throughout the game. Such as different grab modes, like physical and distance or interacting with UI physically or using a laser. <br>The biggest reason for this kind of design was so that I could create variants of controllers, so that interactors and interactables could work both in VR and Desktop. Allowing for users to play in both forms and still be able to play with each other.</span>
+                    <div class="image-preview">
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Interactable Syncing.mp4"></video>
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/UI Interaction Syncing.mp4" style="margin-top: 10px;"></video>
+                    </div>
+                    <span class="text">The videos above show the interaction system also working through network. Alongside this, world syncing was also capable allowing players to jump between different worlds that have been created by the players. Allowing them to roleplay through different environments as they progress through their game.</span>
+                    <div class="image-preview">
+                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/World Switching.mp4"></video>
+                    </div>
+                </div>
+
+                <div class="dropdown-section">
+                    <span class="title title-small" style="margin-left: 10px">NETWORK SYNCING</span>
+                </div>
+
+                <div class="dropdown-section">
+                    <span class="title title-small" style="margin-left: 10px">BUILDING SYSTEM</span>
+                </div>
+            </div>
+        </div>
+            <!-- Footer Container -->
+            <div class="footer-container middle-align title" style="background-image: linear-gradient(180deg, #620b1b, #1e0006)">
+                <div class="footer-holder">
+                    <div class="potion-icon">
+                        <div class="potion-background">
+                            <img src="../Images/AlchemicalIngredience.png" alt="" class="plant-img">
+                        </div>
+
+                    </div>
+                    <span class="title-medium underline-title">Contact Me</span>
+                    <span class="text">
+                        <p>
+                            <br>Feel free to contact me regarding any type of work or positions avaliable. 
+                            <br>You can reach me at these locations:
+                        </p>
+                    </span>
+                    <span>
+                        <a class="underline-link" href="mailto:contact@christopherwarner.co.uk" target="_blank">contact@christopherwarner.co.uk</a>
+                    </span>
+                    <div class="contact-me-socials-holder">
+                        <a href="https://twitter.com/Chris_Warner1" target="_blank" class="social-bubble">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/christophermawarner/" target="_blank" class="social-bubble">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:contact@christopherwarner.co.uk" target="_blank" class="social-bubble">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Container End -->
+        </div>
+
+    </div>
+    <!-- Menu Bar-->
+    <div id="menubar-container">
+        <!-- Menu Bar Background-->
+        <div id="menu-background"></div>
+        <!-- Menu Bar Background End-->
+        <!-- Menu Bar Container-->
+        <div class="container-fluid">
+            <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                <div id="menubar-title" class="noselect">
+                    <span>Chris Warner</span>
+                    </div>
+            </div>
+            <div class="col-sm-6 col-md-9 col-lg-9 col-xl-10">
+                
+            </div>
+        </div>
+        <!-- Menu Bar Container End-->
+    </div>
+</main>
+    <footer>
+    </footer>
+    <script>
+  
+        // Targeting video element 
+        const clips = document.querySelectorAll("#vid")
+        const containers = document.querySelectorAll("#container")
+  
+        /* Applying mouseover event on video clip 
+        and then we call play() function to play 
+        the video when the mouse is over the video */
+        clips.forEach(clip => {
+            clip.addEventListener("mouseover", function (e) {
+            clip.play();
+            })
+        });
+
+  
+        /* Applying mouseout event on video clip 
+        and then we call pause() function to stop 
+        the video when the mouse is out the video */
+
+        for(let i = 0; i < containers.length; i++){
+            containers[i].addEventListener("mouseleave", function (e) {
+                clips[i].currentTime = 0;
+                clips[i].pause();
+            })
+        }
+    </script>
+</body>
+</html>

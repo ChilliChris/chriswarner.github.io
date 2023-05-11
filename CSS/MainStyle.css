@@ -70,6 +70,17 @@ body::before{
     width: 100%;
 }
 
+#page-wrapper{
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: #00000096;
+    width: 70%;
+    height:100%;
+    border-radius: 5%;
+    padding: 0 2% 0 2%;
+}
+
 #menu-background{
     background-color: #000000;
     opacity: 0.5;
@@ -285,6 +296,12 @@ body::before{
     background-color: #1d1919;
 }
 
+.text{
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
 .title{
     font-family: 'Quicksand',sans-serif;
     font-weight: 300;
@@ -304,6 +321,10 @@ body::before{
 
 .title-large{
     font-size: 60px;
+}
+
+.page-title{
+    padding-top: 1em;
 }
 
 .text{
@@ -525,3 +546,51 @@ body::before{
   .contribution-text{
     text-align: left;
   }
+
+  #video-background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+.about-section{
+    width: 100%;
+}
+
+.info-box{
+    width: 100%;
+    padding: 0 5% 0 5%;
+    margin-bottom: 10px;
+}
+
+.dropdown-section
+{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-image: linear-gradient(270deg, #620b1b, #1e0006);
+
+}
+.dropdown-section-inner{
+    padding-left: 1em;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.image-preview{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
