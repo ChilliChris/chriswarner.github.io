@@ -5,8 +5,10 @@
     <title>Christopher Warner - Game Programming Protfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="../CSS/MainStyle.css" rel="stylesheet">
-    <link href="../CSS/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,52 +48,52 @@
                 </div>
                 
                 <div class="dropdown-section">
-                    <span class="title title-small" style="margin-left: 10px">INTERACTION FRAMEWORK & NETWORK SYNCING</span>
+                    <a class="title title-small underline-link collapsed" style="margin-left: 10px" data-toggle="collapse" href="#dropdown-section-inner1">INTERACTION FRAMEWORK & NETWORK SYNCING</a>
                 </div>
-                <div class="dropdown-section-inner" style="display: block;">
+                <div class="collapse" id="dropdown-section-inner1">
                     <span class="text">I designed and devleoped all of the VR Interaction code from the ground up meaning that I could have more control and understanding of how the code behaves. The base design of the code structure is as follows:
                     </span>
-                    <div class="image-preview">
-                        <img class="center" src="../Showcase/Images/DelVR/DelVR-Interaction-System-DiagramLong-1024x459.png" alt="" style="padding: 2%; background-color: white;">
+                    <div class="row image-preview">
+                        <img class=" center col-sm-6" src="../Showcase/Images/DelVR/DelVR-Interaction-System-DiagramLong-1024x459.png" alt="" style="padding: 2%; background-color: white;">
                     </div>
                     <span class="text">The interaction system needed to be made so that it could function throughout the project without needing to create multiple different scripts to do the same thing with extra features. So I used a Polymophism approach to the interaction. So that the child classes such as dice or tiles could inherit all the nessasary properties and functions needed for interaction. This also worked for interactors as well, having this style of framework for interaction allowed me to easily create different forms of interaction throughout the game. Such as different grab modes, like physical and distance or interacting with UI physically or using a laser. <br>The biggest reason for this kind of design was so that I could create variants of controllers, so that interactors and interactables could work both in VR and Desktop. Allowing for users to play in both forms and still be able to play with each other.</span>
-                    <div class="image-preview">
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Interactable Syncing.mp4"></video>
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/UI Interaction Syncing.mp4" style="margin-top: 10px;"></video>
+                    <div class="row image-preview">
+                        <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Interactable Syncing.mp4"></video>
+                        <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/UI Interaction Syncing.mp4" style="margin-top: 10px;"></video>
                     </div>
                     <span class="text">The videos above show the interaction system also working through network. Alongside this, world syncing was also capable allowing players to jump between different worlds that have been created by the players. Allowing them to roleplay through different environments as they progress through their game.</span>
-                    <div class="image-preview">
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/World Switching.mp4"></video>
+                    <div class="row image-preview">
+                        <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/World Switching.mp4"></video>
                     </div>
                 </div>
                 <div class="dropdown-section">
-                    <span class="title title-small" style="margin-left: 10px">BUILDING SYSTEM</span>
+                    <a class="title title-small underline-link collapsed" style="margin-left: 10px" data-toggle="collapse" href="#dropdown-section-inner2">BUILDING SYSTEM</a>
                 </div>
 
-                <div class="dropdown-section-inner" style="display: block;">
+                <div class="collapse" id="dropdown-section-inner2">
                     <span class="title title-medium">Grid System</span>
                     <span class="text"><br>The building system was made up of a custom grid. Which made it possible to build a different height layers and snapping points throughout the table/world. The grid system also had a shader that rendered a grid texture over the top of the world so that whenever a certain type of block was placed it would apply a grid to it to allow people to track movement distance. But when building props like walls, barrels and more were placed down the grid wouldn't be rendered over the top. The grid render also had custom properties to allow for size changes, colour and projection side.</span>
-                    <div class="image-preview">
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Grid Shader Rendering Demo.mp4"></video>
+                    <div class="row image-preview">
+                        <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Grid Shader Rendering Demo.mp4"></video>
                     </div>
                     <span class="title title-medium">Tile Customisation</span>
                     <span class="text"><br>More importantly, was the tiles that could be placed onto the grid. These all had their own custom properties that could be customised through the use of a menu. Both in Desktop and VR.</span>
-                    <div class="image-preview">
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Tile_Prop_Customisation.mp4"></video>
+                    <div class="row image-preview">
+                        <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Tile_Prop_Customisation.mp4"></video>
                     </div>
                     <span class="title title-medium">Building Environments</span>
-                    <div class="image-preview">
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Building_Timelaps.mp4"></video>
+                    <div class="row image-preview">
+                        <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Building_Timelaps.mp4"></video>
                     </div>
                     <span class="title title-medium">Save and Loading System</span>
                     <span class="text"><br>Saving and loading tiles was possible due to a GUID system that was built into each tile. So when a table/environment was saved, the system would then save all of the nessasary GUIDs into a text file, ready to be loaded in the future. This also allowed for me to create a copy and paste system of groups of tiles so that they could be placed together.</span>
-                    <div class="image-preview">
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Build_System_Save_Load.mp4"></video>
+                    <div class="row image-preview">
+                        <video controls="controls" muted class="center col-sm-6" src="../Showcase/Videos/DelVR/Build_System_Save_Load.mp4"></video>
                     </div>
                     <span class="title title-medium">Undo and Redo Building</span>
                     <span class="text"><br>Undoing and Redoing was acheived by utilizing the Queue Class collection, by customising certain actions that could be undone and redone allowed for a simple system. Which would also work over network. In the example below you can see it working in the building system. But it was also tied into grabbing objects as well.</span>
-                    <div class="image-preview">
-                        <video controls="controls" muted class="center" src="../Showcase/Videos/DelVR/Build_System_Undo_Redo.mp4"></video>
+                    <div class="row image-preview">
+                        <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Build_System_Undo_Redo.mp4"></video>
                     </div>
                 </div>
             </div>
