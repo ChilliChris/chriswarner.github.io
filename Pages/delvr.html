@@ -2,7 +2,7 @@
 <html lang="en-GB">
 
 <head>
-    <title>Christopher Warner - Game Programming Protfolio</title>
+    <title>DelVR - VR Tabletop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="info-box">
-                    <span class="text">DelVR is a Virtual Tabletop platform that runs in Virtual Reality and Desktop. It was designed to allow player to play their own tabletop roleplaying games in a virtual environment. Allowing players to embody their characters and get fully immursed into a virtually build environment. DelVR allows users to create custom environments and play through them like you would in a Tabletop Roleplaying game such as things like D&D.
+                    <span class="text">DelVR is a Virtual Tabletop platform that runs in Virtual Reality and Desktop. It was designed to allow player to play their own tabletop roleplaying games in a virtual environment. Allowing players to embody their characters and get fully immersed into a virtually build environment. DelVR allows users to create custom environments and play through them like you would in a Tabletop Roleplaying game such as things like D&D.
                         <br>I was the only developer on this project, which meant I implemented all of the game's functionality. Which consisted of Networking, a completely custom VR Framework and World Building system. This project helped me learn a lot about Unity, Networking and C# in general. 
                     </span>
                 </div>
@@ -51,17 +51,17 @@
                     <a class="title title-small underline-link collapsed" style="margin-left: 10px" data-toggle="collapse" href="#dropdown-section-inner1">INTERACTION FRAMEWORK & NETWORK SYNCING</a>
                 </div>
                 <div class="collapse" id="dropdown-section-inner1">
-                    <span class="text">I designed and devleoped all of the VR Interaction code from the ground up meaning that I could have more control and understanding of how the code behaves. The base design of the code structure is as follows:
+                    <span class="text">I designed and developed all of the VR Interaction code from the ground up meaning that I could have more control and understanding of how the code behaves. The base design of the code structure is as follows:
                     </span>
                     <div class="row image-preview">
                         <img class=" center col-sm-6" src="../Showcase/Images/DelVR/DelVR-Interaction-System-DiagramLong-1024x459.png" alt="" style="padding: 2%; background-color: white;">
                     </div>
-                    <span class="text">The interaction system needed to be made so that it could function throughout the project without needing to create multiple different scripts to do the same thing with extra features. So I used a Polymophism approach to the interaction. So that the child classes such as dice or tiles could inherit all the nessasary properties and functions needed for interaction. This also worked for interactors as well, having this style of framework for interaction allowed me to easily create different forms of interaction throughout the game. Such as different grab modes, like physical and distance or interacting with UI physically or using a laser. <br>The biggest reason for this kind of design was so that I could create variants of controllers, so that interactors and interactables could work both in VR and Desktop. Allowing for users to play in both forms and still be able to play with each other.</span>
+                    <span class="text">The interaction system needed to be made so that it could function throughout the project without needing to create multiple different scripts to do the same thing with extra features. So I used a Polymophism approach to the interaction. So that the child classes such as dice or tiles could inherit all the necessary properties and functions needed for interaction. This also worked for interactors as well, having this style of framework for interaction allowed me to easily create different forms of interaction throughout the game. Such as different grab modes, like physical and distance or interacting with UI physically or using a laser. <br>The biggest reason for this kind of design was so that I could create variants of controllers, so that interactors and interactables could work both in VR and Desktop. Allowing for users to play in both forms and still be able to play with each other.</span>
                     <div class="row image-preview">
                         <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Interactable Syncing.mp4"></video>
                         <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/UI Interaction Syncing.mp4" style="margin-top: 10px;"></video>
                     </div>
-                    <span class="text">The videos above show the interaction system also working through network. Alongside this, world syncing was also capable allowing players to jump between different worlds that have been created by the players. Allowing them to roleplay through different environments as they progress through their game.</span>
+                    <span class="text">The videos above show the interaction system also working through network. Alongside this, world syncing was also capable allowing players to jump between different worlds that have been created by the players. Allowing them to role-play through different environments as they progress through their game.</span>
                     <div class="row image-preview">
                         <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/World Switching.mp4"></video>
                     </div>
@@ -86,12 +86,12 @@
                         <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Building_Timelaps.mp4"></video>
                     </div>
                     <span class="title title-medium">Save and Loading System</span>
-                    <span class="text"><br>Saving and loading tiles was possible due to a GUID system that was built into each tile. So when a table/environment was saved, the system would then save all of the nessasary GUIDs into a text file, ready to be loaded in the future. This also allowed for me to create a copy and paste system of groups of tiles so that they could be placed together.</span>
+                    <span class="text"><br>Saving and loading tiles was possible due to a GUID system that was built into each tile. So when a table/environment was saved, the system would then save all of the necessary GUIDs into a text file, ready to be loaded in the future. This also allowed for me to create a copy and paste system of groups of tiles so that they could be placed together.</span>
                     <div class="row image-preview">
                         <video controls="controls" muted class="center col-sm-6" src="../Showcase/Videos/DelVR/Build_System_Save_Load.mp4"></video>
                     </div>
                     <span class="title title-medium">Undo and Redo Building</span>
-                    <span class="text"><br>Undoing and Redoing was acheived by utilizing the Queue Class collection, by customising certain actions that could be undone and redone allowed for a simple system. Which would also work over network. In the example below you can see it working in the building system. But it was also tied into grabbing objects as well.</span>
+                    <span class="text"><br>Undoing and Redoing was achieved by utilizing the Queue Class collection, by customising certain actions that could be undone and redone allowed for a simple system. Which would also work over network. In the example below you can see it working in the building system. But it was also tied into grabbing objects as well.</span>
                     <div class="row image-preview">
                         <video controls="controls" muted class=" center col-sm-6" src="../Showcase/Videos/DelVR/Build_System_Undo_Redo.mp4"></video>
                     </div>

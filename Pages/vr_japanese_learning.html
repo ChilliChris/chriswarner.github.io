@@ -2,11 +2,12 @@
 <html lang="en-GB">
 
 <head>
-    <title>Christopher Warner - Game Programming Protfolio</title>
-    <meta charset="utf-8">
+    <title>VR Japanese Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="../CSS/MainStyle.css" rel="stylesheet">
-    <link href="../CSS/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +20,56 @@
     <main>
     <!--Page Container-->
     <div id="page-container">
-        <div id="page-background"></div>
+        <div id="page-background">
+        </div>
+        <div id="page">
+            <div id="page-wrapper">
+                <div class="page-title title middle-align">
+                    <span class="project-info title-large underline-title">
+                        VR Japanese Learning Study
+                    </span>
+                </div>
+                <div class="middle-align">
+                    <img width="25%" src="../Images/UoL Logo.png" style="mix-blend-mode: screen; filter: invert(1);">
+                </div>
+                <div class="about-section">
+                    <div class="title">
+                        <span class="title-medium">About VR Japanese Learning Study</span>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <span class="text">
+                        This project was my final year dissertation on the topic of "Learning Effectiveness through the use of Virtual Reality", the study was designed to research how effective interactivity can be to the human brain in VR compared to natural means like for example website learning or reading from books.
+                        <br><br> The project consisted of 2 different sections, originally designed to be 3 but time and resources didn't plan out. The first section of the game would mainly be designed to teach the player the basics of VR interaction and also slowly teach them a few symbols (more like a tutorial section). The second section was a shooting range where players were presented with the sound of a symbol and had to shoot the correct one amongst different symbols.
+                    </span>
+                </div>
+                                
+                <div class="dropdown-section">
+                    <a class="title title-small underline-link collapsed" style="margin-left: 10px" data-toggle="collapse" href="#dropdown-section-inner1">SECTION 1</a>
+                </div>
+                <div class="collapse" id="dropdown-section-inner1">
+                    <span class="text">The first section of the game was more designed as a tutorial for the players to get use to how to interact with objects in the VR space. The design of the tutorial was also to naturally guide the player into the language as well by getting them to match the symbols into the slots of a word by using sound.
+                        <br>Throughout my research this section of the project people found the most useful as it seemed to be more informative for the players then the second section of the game.
+                    </span>
+                    <div class="row image-preview">
+                        <video controls="controls" class=" center col-sm-6" src="../Showcase/Videos/JPLearning/Phase01.mp4"></video>
+                    </div>
+                </div>
+                <div class="dropdown-section">
+                    <a class="title title-small underline-link collapsed" style="margin-left: 10px" data-toggle="collapse" href="#dropdown-section-inner2">SECTION 2</a>
+                </div>
+                <div class="collapse" id="dropdown-section-inner2">
+                    <span class="text">
+                        The second section of the game was more designed around repetitive learning. But with a fun and interesting twist for the player. I wanted to make this section more fun while they were learning so that the information could be retained and absorbed.
+                        <br>The player would enter this section facing a sign that would contain instruction on how this section of the game would work. The player would then find a bow behind them and be required to pick it up before proceeding. To get the player to understand how the bow works they would first need to shoot a big target in front of them.
+                        <br> The way this section worked, they would be shown the card they are learning first and would need to remember it, once ready they would need to shoot the card then have to do this 5 times while the card was mixed up in different symbols.
+                    </span>
+                    <div class="row image-preview">
+                        <video controls="controls" class=" center col-sm-6" src="../Showcase/Videos/JPLearning/Phase02.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
             <!-- Footer Container -->
             <div class="footer-container middle-align title" style="background-image: linear-gradient(180deg, #620b1b, #1e0006)">
                 <div class="footer-holder">
@@ -53,7 +103,6 @@
                 </div>
             </div>
             <!-- Footer Container End -->
-        </div>
 
     </div>
     <!-- Menu Bar-->
