@@ -280,6 +280,14 @@ body::before{
     width: 100%;
 }
 
+#row-flex{
+    display: flex;
+    min-height: 380px;
+    grid-gap: 50px 25px;
+    justify-content: center;
+    width: 100%;
+}
+
 .card-holder{
     min-width: 200px;
     width: 25%;
@@ -594,6 +602,7 @@ body::before{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    height: 75%;
     float: none;
 }
 .page-link{
