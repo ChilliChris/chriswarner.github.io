@@ -276,7 +276,7 @@ body::before{
     } 
 }
 
-#row{
+#row-personal{
     display: grid;
     grid-template-columns: 40em 40em 40em;
     grid-template-rows: 40em 40em;
@@ -286,8 +286,9 @@ body::before{
     width: 100%;
 }
 
-#row-flex{
-    display: flex;
+#row-professional{
+    display: grid;
+    grid-template-columns: 40em 40em;
     min-height: 380px;
     grid-gap: 50px 25px;
     justify-content: center;
